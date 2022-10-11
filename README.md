@@ -5,10 +5,12 @@
 - **Source code can't be disclosed by the moment**
 
 
+
 ## Instructions (bcnad & cosmovisor) 
+:eyes: Download the binary to your local computer and upload to your validator server.
+
 ```
 rm  -rf ./bcna_linux_amd64.tar.gz  # delete old versions, check also bcnad in this folder
-wget https://github.com/BitCannaGlobal/bcna-patch/releases/download/v1.4.3-patch/bcna_linux_amd64.tar.gz
 tar zxvf bcna_linux_amd64.tar.gz
 ./bcnad version --long --output json |jq .commit 
    >>>>> output should be >>>> "94bfd1b95655df23ec5617b06aadf80f90917521"
