@@ -12,7 +12,7 @@ wget https://github.com/BitCannaGlobal/bcna-patch/releases/download/v1.4.3/bcna_
 rm  -rf ./bcna_linux_amd64.tar.gz  # delete old versions, check also bcnad in this folder
 tar zxvf bcna_linux_amd64.tar.gz
 ./bcnad version
- >> result should be `v1.4.3`
+ >> result should be `1.4.3`
 ```
 ### For Cosmovisor:
 ```
