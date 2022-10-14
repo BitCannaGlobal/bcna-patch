@@ -1,19 +1,18 @@
 
-## Please replace current v1.4.2 by v1.4.3
+## Please replace current v1.4.2 or v1.4.3-patch by v1.4.3
 - No chain halt (consensus) required
 - Apply it ASAP
-- **Source code can't be disclosed by the moment**
-
 
 
 ## Instructions (bcnad & cosmovisor) 
 :eyes: Download the binary to your local computer and upload to your validator server.
 
 ```
+wget https://github.com/BitCannaGlobal/bcna-patch/releases/download/v1.4.3/bcna_linux_amd64.tar.gz
 rm  -rf ./bcna_linux_amd64.tar.gz  # delete old versions, check also bcnad in this folder
 tar zxvf bcna_linux_amd64.tar.gz
-./bcnad version --long --output json |jq .commit 
-   >>>>> output should be >>>> "94bfd1b95655df23ec5617b06aadf80f90917521"
+./bcnad version
+ >> result should be `v1.4.3`
 ```
 ### For Cosmovisor:
 ```
@@ -29,7 +28,3 @@ sudo service bcnad restart
 sudo journalctl -fu bcnad #check the logs
 ```
 
-## Sha256SUM
-`05c896fc389f9c08c1beb8e55490bb5d171c8373b951ba54ccff4cbd484ff3ef bcna_linux_amd64.tar.gz`
-
-Other versions, check the attached `release_checksum`
