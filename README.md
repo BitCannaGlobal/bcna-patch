@@ -1,5 +1,5 @@
 
-## Please replace current v1.4.2 or v1.4.3-patch by v1.4.3
+## Please replace current `v1.4.2` or `v1.4.3-patch` by `v1.4.3`
 - No chain halt (consensus) required
 - Apply it ASAP
 
