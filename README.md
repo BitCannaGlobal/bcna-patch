@@ -28,7 +28,7 @@ git checkout 1.4.3-2-g9f1b06d
 make build
 build/bcna version 
  >> should be `1.4.3-2-g9f1b06d` 
-
+```
 ### For Cosmovisor:
 ```
 cp ~/.bcna/cosmovisor/current/bin/bcnad ~/.bcna/cosmovisor/current/bin/bcna_downgrade #for fast downgrade 
